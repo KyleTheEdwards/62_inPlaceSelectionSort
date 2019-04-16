@@ -33,6 +33,10 @@ public class OrderedList_inArraySlots
           unorderedCopy.set(nextLargerAt, null);
           nextLargerAt = champIndex(unorderedCopy);
         }
+
+        for(int x = 0; x < size(); x++){
+          unordered.set(x,get(x));
+        }
         
         System.out.println( 
             "Change this to report on progress."
